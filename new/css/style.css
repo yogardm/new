@@ -1,0 +1,76 @@
+header {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  transition: background-image 2s ease-in-out;
+}
+
+/* Navbar default */
+.navbar {
+  opacity: 1; /* Opacity penuh saat halaman dimuat */
+  transition: opacity 0.3s ease; /* Menambahkan transisi halus */
+}
+
+/* Kelas ini akan diterapkan saat halaman digulir */
+.navbar.scroll {
+  opacity: 0.7; /* Mengubah opacity saat scroll */
+}
+
+.copyright {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Agar navbar tetap berada di atas elemen lainnya */
+}
+
+/* */
+
+/* Menyembunyikan dropdown menu secara default */
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+  opacity: 0; /* Menambahkan opacity 0 agar tidak terlihat */
+  transition: opacity 0.7s ease; /* Memberikan transisi halus */
+}
+
+/* Menampilkan dropdown menu saat hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1; /* Membuat dropdown muncul */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan sedikit bayangan */
+}
+
+/* Mengubah warna saat hover pada navbar link */
+.navbar-nav .nav-link {
+  text-transform:uppercase ;
+  text-decoration: none; /* Menghapus underline default */
+  border-bottom: 0px solid #fff; /* Garis bawah yang tipis */
+  transition: border-bottom 0.3s ease; /* Efek transisi saat hover */
+
+  transition: color 0.7s ease; /* Transisi halus */
+}
+
+/* Warna latar belakang dan teks saat hover */
+.navbar-nav .nav-link:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff; /* Garis bawah lebih kecil saat hover */
+  color: #fff; /* Ganti warna teks saat hover */
+}
+
+/* Dropdown saat hover */
+.nav-item.dropdown:hover .nav-link {
+  color: #fff; /* Ganti warna teks saat hover pada dropdown */
+}
+
+/* Dropdown menu saat hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  background-color: #fff; /* Ganti warna latar belakang menu dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada dropdown */
+}
+
+.classbro {
+  background-color: rgba(13, 110, 253);
+}
